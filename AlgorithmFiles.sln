@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stack", "Stack", "{1649BD71-96A7-4DF7-89DD-35AB6FDFB8C6}"
+	ProjectSection(SolutionItems) = preProject
+		Stack.cs = Stack.cs
+		..\algorithms\algorithms\StackClasses.cs = ..\algorithms\algorithms\StackClasses.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedList", "LinkedList", "{2215B9CC-A23B-4509-9329-158F44A18711}"
+	ProjectSection(SolutionItems) = preProject
+		..\algorithms\algorithms\LinkedListClasses.cs = ..\algorithms\algorithms\LinkedListClasses.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queue", "Queue", "{06F74183-98B4-4E24-B3CD-CB2D676C6CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueProject", "QueueProject\QueueProject.csproj", "{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04FB2DD6-4D75-4973-BD0B-C5F97A68FA74} = {06F74183-98B4-4E24-B3CD-CB2D676C6CE6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96D6A01-DEA6-4024-ADB2-172A920BEC62}
+	EndGlobalSection
+EndGlobal
