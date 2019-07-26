@@ -1,6 +1,6 @@
 ﻿namespace QueueProject
 {
-    using static System.Console;
+    using System;
     class Queue<T> : IQueue<T>
     {
         private int maxSize;
@@ -19,7 +19,7 @@
         public void Enqueue(T item)
         {
             if (isFull())
-                WriteLine("Queue is full.");
+                throw new Exception("Queue Is Full.");
             else
             {
                 if (rear == maxSize - 1)
@@ -39,6 +39,20 @@
             }
 
             return temp;
+        }
+        public void EnqueueAll(T[] items)
+        {
+            foreach (var item in items)
+            {
+                try
+                {
+                    Enqueue(item);
+                }
+                catch (Exception)
+                {
+                    throw new QueueException("Failed adding a " + item.GetType() + " with a value of " + item + ".");
+                }
+            }
         }
         public T peekFront()
         {
@@ -83,7 +97,7 @@
             if (items / maxSize > .9)
                 return;
             T[] newQueue = new T[items];
-            for(var i = 0; i < items; i++)
+            for (var i = 0; i < items; i++)
             {
                 newQueue.SetValue(myQueue[i], i);
             }

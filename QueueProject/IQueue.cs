@@ -9,6 +9,7 @@
         T Dequeue();
         string ToString();
         int Count();
+        void EnqueueAll(T[] items);
         void Clear();
         bool Contains(T item);
         T[] ToArray();
